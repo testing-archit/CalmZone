@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calm Zone - Mental Health Resources</title>
+    <style>
+        :root {
+            --primary: #ff6f61;
+            --secondary: #4CAF50;
+            --background: #f8f9fa;
+            --text: #333;
+            --card: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: var(--card);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .main-content {
+            padding: 2rem 0;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .resource-card {
+            background: var(--card);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .resource-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .emergency-banner {
+            background: #ff4444;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .emergency-banner a {
+            color: white;
+            font-weight: bold;
+        }
+
+        .category-title {
+            margin: 3rem 0 1rem;
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        .resource-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .resource-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: var(--card);
+            padding: 1rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">Calm Zone</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mood-tracker.html">Mood Tracker</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="emergency-banner">
+        <div class="container">
+            If you're in crisis, call 988 for immediate support (US) or <a href="#international-numbers">view international numbers</a>
+        </div>
+    </div>
+
+    <main class="container main-content">
+        <h1>Mental Health Resources</h1>
+        
+        <div class="category-title">Self-Help Tools</div>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3>Meditation Guides</h3>
+                <p>Access our collection of guided meditation sessions designed for different needs and experience levels.</p>
+                <a href="#" class="resource-link">Start Meditating →</a>
+            </div>
+            <div class="resource-card">
+                <h3>Breathing Exercises</h3>
+                <p>Learn various breathing techniques to help manage stress, anxiety, and promote relaxation.</p>
+                <a href="#" class="resource-link">Practice Now →</a>
+            </div>
+            <div class="resource-card">
+                <h3>Stress Management</h3>
+                <p>Discover effective strategies and techniques for managing daily stress and building resilience.</p>
+                <a href="#" class="resource-link">Learn More →</a>
+            </div>
+        </div>
+
+        <div class="category-title">Educational Resources</div>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3>Mental Health 101</h3>
+                <p>Understanding common mental health conditions, symptoms, and treatment options.</p>
+                <a href="#" class="resource-link">Start Learning →</a>
+            </div>
+            <div class="resource-card">
+                <h3>Therapy Guides</h3>
+                <p>Learn about different types of therapy and how to find the right therapist for you.</p>
+                <a href="#" class="resource-link">Explore →</a>
+            </div>
+            <div class="resource-card">
+                <h3>Self-Care Basics</h3>
+                <p>Essential self-care practices and tips for maintaining good mental health.</p>
+                <a href="#" class="resource-link">Read More →</a>
+            </div>
+        </div>
+
+        <div class="category-title">Crisis Support</div>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3>24/7 Crisis Hotlines</h3>
+                <p>List of emergency contact numbers and crisis support services available 24/7.</p>
+                <a href="#" class="resource-link">View Numbers →</a>
+            </div>
+            <div class="resource-card">
+                <h3>Safety Planning</h3>
+                <p>Create a personalized safety plan for managing crisis situations.</p>
+                <a href="#" class="resource-link">Create Plan →</a>
+            </div>
+            <div class="resource-card">
+                <h3>Local Support Services</h3>
+                <p>Find mental health services and support groups in your area.</p>
+                <a href="#" class="resource-link">Find Help →</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Calm Zone. All rights reserved.</p>
+    </footer>
+</body>
+</html>

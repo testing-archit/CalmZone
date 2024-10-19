@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calm Zone - Community Support</title>
+    <style>
+        :root {
+            --primary: #ff6f61;
+            --secondary: #4CAF50;
+            --background: #f8f9fa;
+            --text: #333;
+            --card: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: var(--card);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .main-content {
+            padding: 2rem 0;
+        }
+
+        .community-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .forum-card {
+            background: var(--card);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .forum-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .forum-title {
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        .topic-count {
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.875rem;
+        }
+
+        .forum-description {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .join-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .join-btn:hover {
+            background: #5753d9;
+        }
+
+        .community-guidelines {
+            background: var(--card);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .guidelines-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .guidelines-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .guidelines-list li::before {
+            content: "•";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+        }
+
+        footer {
+            background: var(--card);
+            padding: 1rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .community-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">Calm Zone</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mood-tracker.html">Mood Tracker</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container main-content">
+        <h1>Community Support</h1>
+        <p>Connect with others, share experiences, and find support in our moderated community forums.</p>
+
+        <div class="community-guidelines">
+            <h2>Community Guidelines</h2>
+            <ul class="guidelines-list">
+                <li>Be respectful and supportive of others</li>
+                <li>Maintain confidentiality and privacy</li>
+                <li>No hate speech or discrimination</li>
+                <li>Don't give medical advice</li>
+                <li>Report concerning content to moderators</li>
+            </ul>
+        </div>
+
+        <div class="community-grid">
+            <div class="forum-card">
+                <div class="forum-header">
+                    <h3 class="forum-title">Anxiety Support</h3>
+                    <span class="topic-count">124 topics</span>
+                </div>
+                <p class="forum-description">A safe space to discuss anxiety, share coping strategies, and support each other.</p>
+                <a href="#" class="join-btn">Join Discussion</a>
+            </div>
+
+            <div class="forum-card">
+                <div class="forum-header">
+                    <h3 class="forum-title">Depression Support</h3>
+                    <span class="topic-count">98 topics</span>
+                </div>
+                <p class="forum-description">Connect with others who understand depression and share your journey.</p>
+                <a href="#" class="join-btn">Join Discussion</a>
+            </div>
+
+            <div class="forum-card">
+                <div class="forum-header">
+                    <h3 class="forum-title">Stress Management</h3>
+                    <span class="topic-count">156 topics</span>
+                </div>
+                <p class="forum-description">Share and learn stress management techniques and daily coping strategies.</p>
+                <a href="#" class="join-btn">Join Discussion</a>
+            </div>
+
+            <div class="forum-card">
+                <div class="forum-header">
+                    <h3 class="forum-title">Mindfulness & Meditation</h3>
+                    <span class="topic-count">87 topics</span>
+                </div>
+                <p class="forum-description">Discuss mindfulness practices and meditation experiences.</p>
+                <a href="#" class="join-btn">Join Discussion</a>
+            </div>
+
+            <div class="forum-card">
+                <div class="forum-header">
+                    <h3 class="forum-title">Self-Care Corner</h3>
+                    <span class="topic-count">143 topics</span>
+                </div>
+                <p class="forum-description">Share self-care tips, routines, and experiences with the community.</p>
+                <a href="#" class="join-btn">Join Discussion</a>
+            </div>
+
+            <div class="forum-card">
+                <<div class="forum-header">
+                    <h3 class="forum-title">Recovery Stories</h3>
+                    <span class="topic-count">92 topics</span>
+                </div>
+                <p class="forum-description">Share your recovery journey and inspire others with your story.</p>
+                <a href="#" class="join-btn">Join Discussion</a>
+            </div>
+        </div>
+
+        <div class="upcoming-events" style="margin-top: 3rem;">
+            <h2>Upcoming Community Events</h2>
+            <div class="community-grid" style="margin-top: 1rem;">
+                <div class="forum-card">
+                    <div class="forum-header">
+                        <h3 class="forum-title">Group Meditation Session</h3>
+                        <span class="topic-count">Online</span>
+                    </div>
+                    <p class="forum-description">Join our weekly guided meditation session with certified instructors.</p>
+                    <p style="margin: 0.5rem 0;"><strong>Date:</strong> Every Tuesday, 7:00 PM EST</p>
+                    <a href="#" class="join-btn">Register</a>
+                </div>
+
+                <div class="forum-card">
+                    <div class="forum-header">
+                        <h3 class="forum-title">Stress Management Workshop</h3>
+                        <span class="topic-count">Online</span>
+                    </div>
+                    <p class="forum-description">Learn practical stress management techniques from mental health professionals.</p>
+                    <p style="margin: 0.5rem 0;"><strong>Date:</strong> Next Saturday, 2:00 PM EST</p>
+                    <a href="#" class="join-btn">Register</a>
+                </div>
+
+                <div class="forum-card">
+                    <div class="forum-header">
+                        <h3 class="forum-title">Support Circle</h3>
+                        <span class="topic-count">Online</span>
+                    </div>
+                    <p class="forum-description">A moderated group discussion focused on mutual support and understanding.</p>
+                    <p style="margin: 0.5rem 0;"><strong>Date:</strong> Every Thursday, 6:00 PM EST</p>
+                    <a href="#" class="join-btn">Register</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="community-features" style="margin-top: 3rem;">
+            <h2>Community Features</h2>
+            <div class="community-grid" style="margin-top: 1rem;">
+                <div class="forum-card">
+                    <h3 class="forum-title">Anonymous Posting</h3>
+                    <p class="forum-description">Share your thoughts and experiences anonymously in a safe environment.</p>
+                </div>
+
+                <div class="forum-card">
+                    <h3 class="forum-title">24/7 Moderation</h3>
+                    <p class="forum-description">Our team ensures the community remains safe and supportive at all times.</p>
+                </div>
+
+                <div class="forum-card">
+                    <h3 class="forum-title">Crisis Support</h3>
+                    <p class="forum-description">Immediate access to crisis resources and professional support when needed.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="join-community" style="margin-top: 3rem; text-align: center;">
+            <h2>Join Our Supportive Community</h2>
+            <p style="margin: 1rem 0;">Connect with others who understand what you're going through.</p>
+            <a href="#" class="join-btn" style="padding: 0.75rem 2rem; font-size: 1.1rem;">Create Account</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Calm Zone. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple modal for join buttons (placeholder functionality)
+        document.querySelectorAll('.join-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Feature coming soon! This will open a registration/login modal.');
+            });
+        });
+    </script>
+</body>
+</html>
