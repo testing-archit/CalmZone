@@ -6,7 +6,7 @@
     <title>MindfulMe - Mood Tracker</title>
     <style>
         :root {
-            --primary: #7209b7;
+            --primary: #d3a9f0;
             --secondary: #4361ee;
             --accent: #4cc9f0;
             --background: #f8f9fa;
@@ -50,7 +50,13 @@
             font-size: 1.5rem;
             font-weight: 700;
             background: linear-gradient(45deg, var(--primary), var(--secondary));
-            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.3rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
 
         .nav-links {
@@ -255,7 +261,7 @@
         <div class="nav-content">
             <div class="logo">CalmZone</div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Home</a></li>
                 <li><a href="#">Statistics</a></li>
                 <li><a href="#">Journal</a></li>
                 <li><a href="#">Settings</a></li>
