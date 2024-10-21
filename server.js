@@ -8,9 +8,7 @@ const port = 3000;
 app.use(express.static('public')); // Serve static files from "public" directory
 app.use(bodyParser.json());
 
-const openai = new OpenAIApi(new Configuration({
-    apiKey: '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'
-}));
+
 
 app.post('/api/chat', async (req, res) => {
     const userMessage = req.body.message;
