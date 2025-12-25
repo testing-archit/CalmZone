@@ -1,6 +1,6 @@
 <div align="center">
 
-![CalmZone Logo](./public/assets/logo.webp)
+![CalmZone Logo](./public/assets/logo.jpeg)
 
 # 🧘 CalmZone
 
