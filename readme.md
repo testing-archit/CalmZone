@@ -1,10 +1,24 @@
-# 🧘 CalmZone - AI-Powered Mental Wellness Platform
+<div align="center">
 
-> **A modern, full-stack mental health companion built with Next.js 15, PostgreSQL, and Google Gemini AI**
+![CalmZone Logo](./public/assets/logo.webp)
 
-CalmZone helps users track their mental well-being through mood logging, journaling, task management, and AI-powered insights. Every interaction is supported by real AI analysis providing personalized therapeutic guidance.
+# 🧘 CalmZone
+
+**AI-Powered Mental Wellness Platform**
+
+> A modern, full-stack mental health companion built with Next.js 15, PostgreSQL, and Google Gemini AI
+
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38bdf8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Neon-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://neon.tech/)
+[![Google Gemini](https://img.shields.io/badge/AI-Gemini_1.5-8E75B2?style=for-the-badge&logo=google)](https://ai.google.dev/)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/testing-archit/CalmZone)
+
+</div>
+
+---
 
 ---
 
