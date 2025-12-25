@@ -86,3 +86,20 @@ npx tsx scripts/check-db.ts
 ├── scripts/          # Standalone utility scripts
 └── public/           # Static assets
 ```
+
+## 🚀 Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/testing-archit/project-showcase-2)
+
+**Quick Deploy Steps:**
+1. Click the deploy button above
+2. Add environment variables:
+   - `DATABASE_URL`: Your Neon PostgreSQL connection string
+   - `GEMINI_API_KEY`: Your Google Gemini API key
+3. Deploy!
+
+For detailed instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+## 📄 License
+
+MIT License - feel free to use this project as you wish!

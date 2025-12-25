@@ -18,6 +18,7 @@ export default function Navbar() {
                         <NavLink href="/">Home</NavLink>
                         <NavLink href="/dashboard">Dashboard</NavLink>
                         <NavLink href="/journal">Journal</NavLink>
+                        <NavLink href="/chat">CalmBot</NavLink>
                         <NavLink href="/mood">Mood Tracker</NavLink>
                         <NavLink href="/resource">Resources</NavLink>
                         <div className="border-l pl-8 ml-8">

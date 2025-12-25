@@ -15,7 +15,7 @@ export default function ResourcesPage() {
                 <Shield className="text-red-500 w-6 h-6 mr-4 mt-1 flex-shrink-0" />
                 <div>
                     <h3 className="text-red-800 font-bold text-lg mb-1">In Crisis?</h3>
-                    <p className="text-red-700">If you need immediate support, please call <strong>9152987821</strong> (IN) or your local emergency number.</p>
+                    <p className="text-red-700">If you need immediate support, please call <strong>8448-8448-45</strong> (IN) or your local emergency number.</p>
                 </div>
             </div>
 

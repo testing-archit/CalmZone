@@ -1,6 +1,7 @@
 import { getTasks, getMoods } from "@/lib/actions";
 import TaskList from "./TaskList";
 import MoodOverview from "./MoodOverview";
+import MoodInsightsWidget from "./MoodInsightsWidget";
 import { Smile, CheckSquare, Clock } from "lucide-react";
 
 export default async function DashboardPage() {
@@ -57,6 +58,11 @@ export default async function DashboardPage() {
                     <h2 className="text-xl font-bold mb-4 text-gray-800">Daily Tasks</h2>
                     <TaskList initialTasks={tasks} />
                 </section>
+            </div>
+
+            {/* AI Insights Section */}
+            <div className="mt-8">
+                <MoodInsightsWidget />
             </div>
         </div>
     );
