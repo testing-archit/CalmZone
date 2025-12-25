@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@theme {
+  --font-sans: var(--font-outfit), sans-serif;
+
+  --color-background: #fdfdfd;
+  --color-foreground: #1a1a1a;
+
+  --color-primary: #ff6f61;
+  --color-primary-50: #fff1f0;
+  --color-primary-100: #ffe4e3;
+  --color-primary-200: #ffc9c7;
+  --color-primary-300: #ffa5a1;
+  --color-primary-400: #ff766b;
+  --color-primary-600: #ed5145;
+  --color-primary-700: #c73e34;
+  --color-primary-800: #a6352d;
+  --color-primary-900: #8a302a;
+
+  --color-secondary: #3498db;
+  --color-secondary-50: #f0f9ff;
+  --color-secondary-100: #e0f2fe;
+  --color-secondary-200: #bae6fd;
+  --color-secondary-300: #7dd3fc;
+  --color-secondary-500: #0ea5e9;
+  --color-secondary-600: #0284c7;
+  --color-secondary-700: #0369a1;
+  --color-secondary-800: #075985;
+  --color-secondary-900: #0c4a6e;
+}
+
+/* Custom utilities */
+@utility glass {
+  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-lg;
+}
+
+@utility glass-dark {
+  @apply bg-black/70 backdrop-blur-md border border-white/10 shadow-lg;
+}
+
+/* Reset or Base styles */
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
